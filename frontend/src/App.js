@@ -21,6 +21,7 @@ import HanteraMedia from './Admin/hantera_media'
 import Inlagg from './Admin/inlagg'
 import HanteraNollegrupp from './Admin/hantera_nollegrupper'
 import HanteraInlagg from './Admin/hantera_inlagg';
+import Album from './Album/Album';
 
 class App extends Component {
   state = {
@@ -61,6 +62,8 @@ class App extends Component {
           <ProtectedRoute path="/nyheter" exact component={News} currentUser={this.state.currentUser}/>
           <ProtectedRoute path="/media" exact component={Media} currentUser={this.state.currentUser}/>
           <ProtectedRoute path="/blandaren" exact component={Blandaren} currentUser={this.state.currentUser}/>
+          <ProtectedRoute path="/album" exact component={Album} currentUser={this.state.currentUser}/>
+
 
           <ProtectedRoute path="/admin" exact adminOnly={true} component={Admin} currentUser={this.state.currentUser}/>
           <ProtectedRoute path="/admin/anvandare" exact adminOnly={true} component={Anvandare} currentUser={this.state.currentUser}/>
