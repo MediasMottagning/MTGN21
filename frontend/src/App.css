@@ -1,16 +1,16 @@
 .App {
   text-align: center;
-  cursor:url(/assets/mickeyhand_liten_upp.cur), auto;
+  cursor: auto
 }
 .App:hover {
-  cursor:url(/assets/mickeyhand_liten_upp.cur), auto;
+  cursor: auto
 }
 .App input[type="submit" i] {
-  cursor:url(/assets/mickeyhand_liten.cur), auto;
+  cursor: pointer
 }
 .App button {
-  cursor:url(/assets/mickeyhand_liten.cur), auto;
+  cursor: pointer
 }
 .App a:-webkit-any-link {
-  cursor:url(/assets/mickeyhand_liten.cur), auto;
+  cursor: pointer
 }
