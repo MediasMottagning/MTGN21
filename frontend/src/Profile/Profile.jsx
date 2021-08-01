@@ -58,15 +58,15 @@ class Profile extends Component {
    
     if (profile.type.name == "RSA") {
       return [document.body.style.setProperty("background-image", // möjligtvis en bugg här
-        "url(/assets/images/sky.png)")]
+        "url(/assets/images/backgroundholly.JPG)")]
     }
   }
  
   componentDidUpdate() {
     this._isMounted = false;
     if (this.state.profiles[this.state.index].type.name != "RSA") {
-      return [document.body.style.setProperty("background-image",
-        "url(/assets/images/sky.png)")]
+      return [document.body.style.setProperty("url(/assets/images/backgroundholly.JPG",
+        "background-image")]
     }
   }
   
@@ -326,6 +326,7 @@ class Profile extends Component {
     return (
       <React.Fragment>
         <div className='profile-text-divider'>
+
           {this.state.factPopup ? <RSAPopup
             user={null}
             text={this.state.factText}
