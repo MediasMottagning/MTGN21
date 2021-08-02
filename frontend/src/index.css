@@ -22,8 +22,8 @@ p {
 }
 
 body {
-  background: #b4cfdd;
-  background-image: url(/assets/images/backgroundholly.JPG);
+  background: #d2acdd;
+  background-image: url(backgroundholly.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

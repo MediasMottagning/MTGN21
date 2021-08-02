@@ -6,6 +6,7 @@ import Loader from "../loader";
 import FlappyPhos from "./FlappyPhös";
 import RSAPopup from "./RSAPopup";
 
+
 //import skyMindre from "/assets/images/sky-mindre.png"
 import rsa_eagle_vit from '../assets/profiles/rsa_eagle_vit.png'
 import media_logo4 from '../assets/profiles/media_logo4.png'
@@ -58,14 +59,14 @@ class Profile extends Component {
    
     if (profile.type.name == "RSA") {
       return [document.body.style.setProperty("background-image", // möjligtvis en bugg här
-        "url(/assets/images/backgroundholly.JPG)")]
+        "url(backgroundholly.JPG)")]
     }
   }
  
   componentDidUpdate() {
     this._isMounted = false;
     if (this.state.profiles[this.state.index].type.name != "RSA") {
-      return [document.body.style.setProperty("url(/assets/images/backgroundholly.JPG",
+      return [document.body.style.setProperty("url(backgroundholly.JPG",
         "background-image")]
     }
   }
