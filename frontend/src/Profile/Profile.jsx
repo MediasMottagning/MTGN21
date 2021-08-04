@@ -59,14 +59,14 @@ class Profile extends Component {
    
     if (profile.type.name == "RSA") {
       return [document.body.style.setProperty("background-image", // möjligtvis en bugg här
-        "url(backgroundholly.JPG)")]
+        "url(final_webb_bg.png)")]
     }
   }
  
   componentDidUpdate() {
     this._isMounted = false;
     if (this.state.profiles[this.state.index].type.name != "RSA") {
-      return [document.body.style.setProperty("url(backgroundholly.JPG",
+      return [document.body.style.setProperty("url(final_webb_bg.png",
         "background-image")]
     }
   }

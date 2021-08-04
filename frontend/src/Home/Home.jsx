@@ -8,7 +8,7 @@ import Lightbox from "lightbox-react";
 import "lightbox-react/style.css";
 import TheNews from "../News/TheNews";
 import './../Media/Media.css';
-import upHouse from '../assets/upHouse.png'
+import ET from '../assets/ET_no_bg.png'
 import moln from "../assets/moln.png"
 import airplane from '../assets/aiplane.png'
 
@@ -108,14 +108,14 @@ class Home extends Component {
     return (
       <div className="home-page">
         <img className="moln_2" width="170px" src={moln}/>
-        <a className="up_house" href="https://forms.gle/xoxKokxqFAmezWVB9"><img width="60px" alt="Click me" src={upHouse} /></a>
+        <a className="up_house" href="https://forms.gle/xoxKokxqFAmezWVB9" target="_blank"><img width="80px" alt="Click me" src={ET} /></a>
         <img className="moln_1" width="200px" src={moln}/>
-        <a className="airplane" href="https://www.instagram.com/inphogram/?hl=sv"><img width="150px" alt="Click me" src={airplane} /></a>
+        <a className="airplane" href="https://www.instagram.com/inphogram/?hl=sv" target="_blank"><img width="150px" alt="Click me" src={airplane} /></a>
         
         {(this.state.loading ? <Loader loading={true} /> :
           <div>
             <div className={(this.state.bubbolJump) ? "hjarta_lada big_lada" : "hjarta_lada small_lada"}>
-              <a className='footer-linck' href={this.getLink()} >
+              <a className='footer-linck' href={this.getLink()} target="_blank" >
                 <img className={(this.state.bubbolJump) ? "bubbel bubbel-jump" : "bubbel"} src="https://cdn4.iconfinder.com/data/icons/iconsimple-communication/512/talk_bubble_heart-512.png" alt="Hjartat_lada" />
                 <p  className="hjarta_text">Vad har du<br />på hjärtat?</p></a>
             </div>
