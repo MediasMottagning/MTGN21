@@ -68,7 +68,7 @@
   
   
   .login-box label {
-    font-size: 20px;
+    font-size: 30px;
     text-align: left;
     margin-left: 15%;
     margin-top: 20px;
@@ -76,12 +76,14 @@
   }
 
   .login-fail {
-    color: red;
-    border: solid red 0.5px;
+    color: rgb(255, 255, 255);
+    border: solid rgb(244, 163, 29) 0.5px;
+    background-color: rgba(169, 29, 43, 1);
+    text-align: center;
     animation: popin 0.1s forwards;
-    position: absolute;
-    margin: 25% 10px 10px 30%;
-    padding: 0% 1%
+    margin: 2% 10px 10px 17%;
+    padding: 1%;
+    width: 400px;
   }
 
   .login-box label::after {
@@ -98,9 +100,9 @@
     background-color: rgb(53, 53, 53);
     border: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 25px;
     /*margin: 3% 0px;*/
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 1%;
     border-bottom: solid #ffffff 1px;
   }
@@ -113,8 +115,8 @@
     border: none;
     color: #ffffff;
     font-family: Arcade;
-    font-size: 20px;
-    margin: 15% 10px 10px 30%;
+    font-size: 25px;
+    margin: 10% 10px 10px 30%;
   }
 
   .login-box-form {
@@ -144,55 +146,94 @@
       margin: 2% 0;
       margin-left: 75px;
     }
+    .login-fail {
+      margin: 20px 10px 10px 15px;
+    }
+
   }
  
   @media screen and (max-width: 400px) {
+    .login-box {
+      margin-top: 30px;
+      margin-left: -20px;
+    }
   .login-box-form {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 0%;
   }
   .login-box h1 {
     font-size: 0px;
   }
   .login-box label {
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 15px;
+    margin-left: -10%;
+    margin-top: 50px;
   }
   .login-box input[type=submit] {
     font-size: 16px;
-    margin-top: 49px;
+    margin-top: 15px;
+    margin-left: -10px;
   }
   .login-box input[type=text], .login-box input[type=password]{
     /*margin: 2% 0;*/
-    margin-left: 20px;
+    margin-left: -40px;
     text-align: center;
+    font-size: 13px;
 
   }
+  .login-fail {
+    margin: 20px 10px 10px 15px;
+    width: 250px;
   }
+  }
+
   @media screen and (max-width: 320px) {
+    
     .login-box input[type=submit] {
-      margin-top: 40px;
+      margin-top: 30px;
     }
+    .login-box-form {
+      text-align: center;
+      padding-top: 0%;
+    }
+    
+    .login-box label {
+      text-align: left;
+      font-size: 15px;
+      margin-left: -10%;
+      margin-top: 50px;
+        }
+
     .login-box input[type=text], .login-box input[type=password]{
       font-size: 15px;
     }
     .login-fail{
       font-size: 20px;
     }
+    .login-fail {
+      margin: 50px 10px 10px 15px;
+    }
       }
+      /*
   @media screen and (max-width: 375px) and (min-height: 811px){
     .login-box {
       margin-top: 40%;
     }
+    .login-fail {
+      margin: 20px 10px 10px 15px;
+    }
     }
   @media screen and (max-width: 375px) and (min-height: 811px){
     .login-box {
       margin-top: 40%;
     }
+    .login-fail {
+      margin: 500px 10px 10px 15px;
     }
-  @media screen and (max-height: 740px) and (min-height: 700px){
-    .login-box input[type=text], .login-box input[type=password] {
-      margin: 1% 0;
+    
     }
-    }
+    */
+
+    
 
