@@ -189,32 +189,72 @@
   }
 
   @media screen and (max-width: 320px) {
-    
-    .login-box input[type=submit] {
+    .login-box {
       margin-top: 30px;
+      margin-left: -40px;
+    }
+    .login-box input[type=submit] {
+      margin-top: 5px;
     }
     .login-box-form {
       text-align: center;
       padding-top: 0%;
     }
-    
+    .login-box h1 {
+      font-size: 0px;
+      margin-top: 37px;
+    }
     .login-box label {
       text-align: left;
       font-size: 15px;
-      margin-left: -10%;
-      margin-top: 50px;
         }
 
     .login-box input[type=text], .login-box input[type=password]{
       font-size: 15px;
     }
-    .login-fail{
-      font-size: 20px;
-    }
-    .login-fail {
-      margin: 50px 10px 10px 15px;
-    }
+    
       }
+      
+    .login-fail {
+        margin: 10px 10px 10px 30px;
+        width: 200px;
+
+      }
+
+      @media screen and (max-width: 414px) {
+        .login-box {
+          margin-top: 30px;
+          margin-left: -40px;
+        }
+        .login-box input[type=submit] {
+          margin-top: 10px;
+          margin-left: 120px;
+        }
+        .login-box-form {
+          text-align: left;
+          padding-top: 0%;
+        }
+        .login-box h1 {
+          font-size: 0px;
+          margin-top: 60px;
+        }
+        .login-box label {
+          text-align: left;
+          font-size: 25px;
+            }
+    
+        .login-box input[type=text], .login-box input[type=password]{
+          font-size: 15px;
+        }
+        
+          }
+          
+        .login-fail {
+            margin: 10px 10px 10px 50px;
+            width: 200px;
+            
+    
+          }
       /*
   @media screen and (max-width: 375px) and (min-height: 811px){
     .login-box {
@@ -224,15 +264,7 @@
       margin: 20px 10px 10px 15px;
     }
     }
-  @media screen and (max-width: 375px) and (min-height: 811px){
-    .login-box {
-      margin-top: 40%;
-    }
-    .login-fail {
-      margin: 500px 10px 10px 15px;
-    }
-    
-    }
+  
     */
 
     
