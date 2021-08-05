@@ -10,6 +10,7 @@ import RSAPopup from "./RSAPopup";
 //import skyMindre from "/assets/images/sky-mindre.png"
 import rsa_eagle_vit from '../assets/profiles/rsa_eagle_vit.png'
 import media_logo4 from '../assets/profiles/media_logo4.png'
+import star from '../assets/profiles/star4.png'
 import questionMark from '../assets/profiles/question.png'
 import fannyNamn from '../assets/easter-eggs/fanny.gif'
 import lovisagif from '../assets/old/lovisa.gif'
@@ -366,7 +367,6 @@ class Profile extends Component {
             {profile.type.name !== "nØllan" ? (
               <React.Fragment>{profile.type.name}<br /> </React.Fragment>
             ) : null}
-
             {profile.n0llegroup ? (
               <React.Fragment>{profile.n0llegroup.name}</React.Fragment>
             ) : null}
@@ -672,7 +672,7 @@ class Profile extends Component {
 
                         /></a> :
                           <img
-                            src={media_logo4}
+                            src={star}
                             width='100%'
                             alt=''
                             className="conf_img"

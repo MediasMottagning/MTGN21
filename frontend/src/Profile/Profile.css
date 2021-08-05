@@ -90,7 +90,7 @@
   border: none;
   border: #000 1px solid;
   z-index: 1;
-  border-radius: 2px; 
+  border-radius: 2px;
 }
 
 .prev-button {
@@ -105,7 +105,7 @@
   border: none;
   border: #000 1px solid;
   z-index: 1;
-  border-radius: 20%; 
+  border-radius: 20%;
 }
 
 .password-form {
@@ -139,7 +139,7 @@
   padding: 20px 20px 30px 20px;
   border-radius: 10px;
   background: white;
-  
+
   min-height: 1000px;
 }
 
@@ -151,22 +151,20 @@
   padding: 20px 20px 30px 20px;
   border-radius: 10px;
   background: #4B4B4B;
-  
+
   min-height: 1000px;
 }
 
 .profile-box {
   padding: 0px 20px 30px 20px;
   min-height: 1000px;
-  background: #fff;
-  background-image: url('../assets/profiles/profile_bg8.png');
+  background: rgb(192, 192, 192);
   background-size: 160%;
 }
 
 .rsa-box {
   padding: 0px 20px 30px 20px;
   min-height: 1000px;
-
   background: #fff;
   background-image: url('../assets/profiles/rsa_bg6.png');
   background-size: 100%;
@@ -297,7 +295,7 @@
 	box-shadow: 0 0 0 lightgray;
   transition: all 200ms ease;
 }
-	
+
 	.left {
 		left: 15%;
 		transform: translate3d(0,-50%,0) rotate(-135deg);
@@ -307,11 +305,11 @@
 		right: 15%;
 		transform: translate3d(0,-50%,0) rotate(45deg);
 	}
-	
+
 	.arrow:hover {
 		border-color: #FFB049;
 	}
-	
+
 	.arrow:before {
 		content: '';
 		position: absolute;
@@ -324,9 +322,9 @@
 
   @media (max-width: 1220px) {
     .left {
-      left: 10%;	
+      left: 10%;
     }
-  
+
     .right {
       right: 10%;
     }
@@ -358,7 +356,7 @@
       padding: 10px 10px 20px 10px;
       min-height: 400px;
     }
-  
+
     .profile-box {
       min-height: 400px;
     }
@@ -368,11 +366,11 @@
       padding: 10px 10px 20px 10px;
       min-height: 400px;
     }
-  
+
     .rsa-box {
       min-height: 400px;
     }
-  
+
     .profile-page {
       padding: 45px 0px 0px 0px;
     }
@@ -388,7 +386,7 @@
     .conf_img {
       display: none;
     }
-  
+
     .prof_img {
       margin:auto;
       width: 50%;
@@ -399,7 +397,5 @@
     .modal {
       margin-top: 16%;
     }
-  
-  }
 
-  
+  }
