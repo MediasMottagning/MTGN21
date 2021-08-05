@@ -4,7 +4,7 @@
     vertical-align: middle;
     text-align: center;
     font-size: 26px;
-    
+
     height: 30px;
     margin: 10px;
     display: inline-flex;
@@ -15,7 +15,7 @@
 .delete-media {
     transform: rotate(20deg);
     border: red solid 10px;
-    
+
 }
 
 .checkbox-type-contaner {
@@ -38,9 +38,9 @@
     background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2012/05/ivory-off-white-paper-texture.jpg');
     background-size: fill;
     background: #0000007e;
-    
-    border-radius: 30px; 
-    padding-bottom: 0px; 
+
+    border-radius: 10px;
+    padding-bottom: 0px;
     transition: all 0.2s ease;
     /*position: fixed;
     width: 100%;*/
@@ -54,7 +54,7 @@
 .media-button-contaner {
     background: rgba(255, 255, 255, 0);
 
-    border-radius: 20px 20px 5px 5px; 
+    border-radius: 10px 10px 5px 5px;
     padding: 20px;
     padding-top: 10px;
 
@@ -106,7 +106,7 @@
     background-position: center;
     min-height: 100px;
     cursor: pointer;
-    
+
 }
 
 .checkbox-box {
@@ -127,7 +127,7 @@
     background-color: #0000006c;
     filter: drop-shadow(0px 6px 3px #0000003f);
     border-radius: 7px;
-    
+
 }
 
 
@@ -172,7 +172,7 @@
         width: 20px;
         height: 20px;
     }
-    
+
 }
 
 .media-button:active{
