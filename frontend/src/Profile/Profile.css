@@ -186,6 +186,20 @@
   text-align: left;
 }
 
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.profile-name{
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .rsa-box h4 {
   text-align: left;
 }
@@ -384,7 +398,7 @@
     }
 
     .conf_img {
-      display: none;
+      width: 60%;
     }
 
     .prof_img {
@@ -392,6 +406,10 @@
       width: 50%;
       padding: 5px;
       padding-bottom: 30px;
+    }
+
+    .text-change {
+      font-size: 12px;
     }
 
     .modal {
