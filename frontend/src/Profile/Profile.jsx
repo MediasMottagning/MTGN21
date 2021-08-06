@@ -333,34 +333,6 @@ class Profile extends Component {
             c1='ok'
             c2=''
             btnRSA={this.fact}></RSAPopup> : null}
-          <h4>Namn</h4>
-          {(profile.type.name === "INPHO" && profile.name === "Fanny") ? (
-            <React.Fragment>
-              <img
-                src={fannyNamn}
-                alt='Fanny'
-                height='40px'
-                align='left'
-              />
-              <br />
-              <br />
-            </React.Fragment>
-          ) :
-          (profile.type.name === "VRAQUE" && profile.name === "Lovisa") ? (
-
-            <React.Fragment>
-              <img
-                src= {lovisagif}
-                alt='Lovisa'
-                height='40px'
-                align='left'
-              />
-              <br />
-              <br />
-            </React.Fragment>
-          ) : (
-              <p>{profile.name}</p>
-            )}
           <h4>Grupp</h4>
           <p>
             {profile.type.name !== "nØllan" ? (
@@ -629,6 +601,46 @@ class Profile extends Component {
 
                   {/* if/else sats för RSA-profilerna */}
                   <div className={(profile.type.name === "RSA" ? 'profile-top-img rsa-text-divider' : 'profile-top-img profile-text-divider')}>
+
+                  {(profile.username === "sacho") ? <a href={`https://www.youtube.com/watch?v=rTfa-9aCTYg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
+                      (profile.username === "namn2goeshere") ? <a href="https://www.youtube.com/watch?v=zDUQTEsawhI" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
+                      (profile.username === "jessie") ? <a href={`https://youtu.be/HLQ1cK9Edhc?t=17`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
+                      (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:
+                      (profile.username === "fanny") ? <img alt="" id={profile.id} width="100%" src={fannyGhibli} className="prof_img"/>:
+                        <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
+              
+              <div className="container">
+                <div className="text-change">
+                    
+                    {(profile.type.name === "INPHO" && profile.name === "Fanny") ? (
+              <React.Fragment>
+                <img
+                  src={fannyNamn}
+                  alt='Fanny'
+                  height='40px'
+                  align='left'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) :
+            (profile.type.name === "VRAQUE" && profile.name === "Lovisa") ? (
+
+              <React.Fragment>
+                <img
+                  src= {lovisagif}
+                  alt='Lovisa'
+                  height='40px'
+                  align='left'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) : (
+                <div class="profile-name">{profile.name}</div>
+              )}
+              </div>
+
                     {profile.type.name === "RSA"
                       ? <img
                         src={rsa_eagle_vit}
@@ -677,15 +689,9 @@ class Profile extends Component {
                             alt=''
                             className="conf_img"
                           />}
+                    </div>
 
 
-
-                    {(profile.username === "sacho") ? <a href={`https://www.youtube.com/watch?v=rTfa-9aCTYg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
-                      (profile.username === "namn2goeshere") ? <a href="https://www.youtube.com/watch?v=zDUQTEsawhI" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
-                      (profile.username === "jessie") ? <a href={`https://youtu.be/HLQ1cK9Edhc?t=17`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
-                      (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:
-                      (profile.username === "fanny") ? <img alt="" id={profile.id} width="100%" src={fannyGhibli} className="prof_img"/>:
-                        <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
                     {/* <TopSecret />
                 <img className='profile-img' src={profile.profile_picture} alt=""/>*/}
                   </div>
