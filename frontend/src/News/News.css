@@ -1,6 +1,6 @@
 .news-content {
     background: #0000007e;
-    border-radius: 30px;
+    border-radius: 10px;
 
     padding-bottom: 2px;
 }
@@ -9,12 +9,11 @@
     padding-top: 12px;
 }
 .news-contaner {
-    border-radius: 30px;
-    background-color: rgb(215, 234, 246);
-    background: url('https://www.toptal.com/designers/subtlepatterns/patterns/paper.png');
-
+    border-radius: 5px;
+    background-color: rgb(200, 200, 200);
     padding: 10px;
     margin: 20px;
+    text-emphasis-color: burlywood;
 }
 
 .news-heder {

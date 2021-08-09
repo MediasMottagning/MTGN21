@@ -5,8 +5,8 @@
 }
 
 .home-page h3{
-    border-radius: 10px;
-    
+    border-radius: 5px;
+
     color: white;
     background-color: #0000006c;
 
@@ -19,7 +19,7 @@
 
 .up_house {
     animation: up_house 70s forwards 0s;
-    cursor: url(/assets/mickeyhand_liten.cur), auto;
+    cursor: pointer;
     opacity: 1;
     position: fixed;
     top: 100px;
@@ -36,7 +36,7 @@
 
 .airplane {
     animation: airplane 21s forwards 9s;
-    cursor: url(/assets/mickeyhand_liten.cur), auto;
+    cursor: pointer;
     opacity: 1;
     position: fixed;
     top: 10px;
@@ -57,7 +57,7 @@
     position: fixed;
     top: 200px;
     left: 95%;
-    width: 200px; 
+    width: 200px;
     transform: translateX(120px);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -75,7 +75,7 @@
     position: fixed;
     top: 100px;
     left: 115%;
-    width: 200px; 
+    width: 200px;
     transform: translateX(120px);
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -94,7 +94,7 @@
 }
 
 .hjarta_lada {
-    transition: all 0.5s; 
+    transition: all 0.5s;
     /*width: fit-content;*/
     margin-top: 70px;
     margin-right: 5px;
@@ -151,27 +151,27 @@
 }
 
 .hjarta_lada:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 .bubbel {
     transform-origin: bottom;
     height: 65px;
-    
+
 }
 
 @media (max-width: 1100px) {
     .bubbel {
         height: 50px;
     }
-    
+
     .hjarta_lada {
         font-size: 9px;
         /*padding: 8px;
         padding-bottom: 0px;
         padding-top: 20px;
         right: 0*/
-    
+
     }
 
     .subtitle {
@@ -191,7 +191,7 @@
         top: 0px;
         width: 35px;
         height: 35px;
-        
+
     }
 
     .hjarta_lada:hover, .big_lada {
@@ -267,7 +267,7 @@
 
     .up_house {
         animation: up_house 20s forwards 2s;
-        cursor: url(/assets/mickeyhand_liten.cur), auto;
+        cursor: pointer;
         opacity: 1;
         position: fixed;
         top: 85px;
@@ -276,7 +276,7 @@
         animation-timing-function: linear;
         z-index: 1;
     }
-    
+
     @keyframes up_house {
         0% {right: 135%; opacity: 1;}
         100% {right: -120%}
@@ -284,7 +284,7 @@
 
     .airplane {
         animation: airplane 9s forwards 5s;
-        cursor: url(/assets/mickeyhand_liten.cur), auto;
+        cursor: pointer;
         opacity: 1;
         position: fixed;
         top: 10px;
@@ -293,7 +293,7 @@
         animation-timing-function: linear;
         z-index: 15;
     }
-    
+
     @keyframes airplane {
         0% {right: 135%; opacity: 1;}
         100% {right: -120%}
@@ -305,31 +305,31 @@
         position: fixed;
         top: 200px;
         left: 80%;
-        width: 200px; 
+        width: 200px;
         transform: translateX(120px);
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         z-index: -1;
     }
-    
+
     @keyframes moln_1 {
         0% {left: 80%; opacity: 1;}
         100% {left: -110%}
     }
-    
+
     .moln_2 {
         animation: moln_2 70s forwards 10s;
         opacity: 0.7;
         position: fixed;
         top: 100px;
         left: 115%;
-        width: 200px; 
+        width: 200px;
         transform: translateX(120px);
         animation-timing-function: linear;
         animation-iteration-count: infinite;
         z-index: -1;
     }
-    
+
     @keyframes moln_2 {
         0% {left: 125%; opacity: 0.7;}
         100% {left: -130%}
