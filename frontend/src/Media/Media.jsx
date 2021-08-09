@@ -301,23 +301,9 @@ class Media extends Component {
                 </React.Fragment>
               ) : null}
             </div>
-            <div className='media-button-contaner'>
-              <button
-                className='media-button'
-                onClick={this.filterButtonHandeler}>
-                {!this.state.isOpen ? <h2>▼ Filter</h2> : <h2>▲ Filter</h2>}
-              </button>
-              {this.props.currentUser ? (this.props.currentUser.admin ? (
-                <button onClick={this.deleteHandeler}>
-                  {this.state.isDeleting ? (
-                    <h2>{`filer valda (${this.state.deleteImage.length +
-                      this.state.deleteVideo.length})`}</h2>
-                  ) : (
-                      <h2>Delete</h2>
-                    )}
-                </button>
-              ) : null) : null}
-            </div>
+
+ 
+
           </div>
           {/*media*/}
           <div className='media-grid'>
