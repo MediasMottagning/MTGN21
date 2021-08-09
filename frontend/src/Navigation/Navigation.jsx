@@ -102,7 +102,7 @@ class Navigation extends Component {
                 id='LoggaUt'
                 className="linkClosed link typewriter-font"
                 onClick={() => this.LogoutHndler()}>
-                <p className='link-text'>logga ut</p>
+                <p className='link-text'>Logga ut</p>
               </button>
           </div>
         </div>
@@ -151,7 +151,7 @@ class Navigation extends Component {
               id='LoggaUt'
               className="linkClosed link typewriter-font"
               onClick={() => this.LogoutHndler()}>
-              <p className='link-text'>logga ut</p>
+              <p className='link-text'>Logga ut</p>
             </button>
             </div>
             );

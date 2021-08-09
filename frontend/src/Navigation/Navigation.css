@@ -4,7 +4,7 @@
         margin-top: 0px;
         width: 100%;
         height: 65px;
-        background-color: #44475f;
+        background-color: #27292d;
         /*overflow-y: scroll;*/
         /*border-left: #000 2px solid;
         /*border-right: #000 2px solid;*/
@@ -178,7 +178,7 @@
 
     .linkOpen {
         /*background-image: url("./boxOpen.png");*/
-        color: #ff853b;
+        color: #97752b;
         border: hidden;
         outline: none;
     }
@@ -275,7 +275,7 @@
         width: 54px;
         margin: none;
         padding: none;
-        background-color: #3b4e52;
+        background-color: #27292d;
         color: #fff;
         border: none;
         outline: none;
@@ -301,7 +301,7 @@
         margin-top: 0px;
         height: 100%;
         width: 150px;
-        background-color: #3b4e52;
+        background-color: #27292d;
         overflow-y: scroll;
         overflow-x: hidden;
         z-index: 9;
