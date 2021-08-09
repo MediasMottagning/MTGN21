@@ -56,13 +56,13 @@ class Profile extends Component {
   componentWillUnmount() {
     this._isMounted = true;
     let profile = this.state.profiles[this.state.index];
-   
+
     if (profile.type.name == "RSA") {
-      return [document.body.style.setProperty("background-image", // möjligtvis en bugg här
-        "url(final_webb_bg.png)")]
+      return [document.body.style.setProperty(// möjligtvis en bugg här
+        "url(final_webb_bg.png)", "background-image")]
     }
   }
- 
+
   componentDidUpdate() {
     this._isMounted = false;
     if (this.state.profiles[this.state.index].type.name != "RSA") {
@@ -70,7 +70,7 @@ class Profile extends Component {
         "background-image")]
     }
   }
-  
+
   componentWillReceiveProps(nextProps) {
     window.scrollTo(0, 0)
     if (nextProps.match.params.user !== this.props.match.params.user) {
@@ -346,9 +346,8 @@ class Profile extends Component {
               <br />
               <br />
             </React.Fragment>
-          ) : 
+          ) :
           (profile.type.name === "VRAQUE" && profile.name === "Lovisa") ? (
-         
             <React.Fragment>
               <img
                 src= {lovisagif}
@@ -552,7 +551,7 @@ class Profile extends Component {
               btnRSA={this.RSAPopup}
             />
           ) : null}
-          
+
           <div className={(profile.type.name === "RSA" ? 'rsa-text-divider' : 'profile-text-divider')}>
             <h4>Namn</h4>
             <p>{profile.name}</p>
@@ -625,7 +624,7 @@ class Profile extends Component {
         ) : (
             <div className="profile_site">
               <div className={(profile.type.name === "RSA" ? 'rsa-contaner profile-contaner-flyut-left' : 'profile-contaner profile-contaner-flyut-left')}>
-                
+
                 <div className={(profile.type.name === "RSA" ? 'rsa-box' : 'profile-box')}>
 
                   {/* if/else sats för RSA-profilerna */}
@@ -670,7 +669,7 @@ class Profile extends Component {
                             className="conf_img"
 
 
-                          
+
                         /></a> :
                           <img
                             src={media_logo4}
