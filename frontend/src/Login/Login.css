@@ -82,13 +82,13 @@
 
   .login-fail {
     color: rgb(255, 255, 255);
-    border: solid rgb(244, 163, 29) 0.5px;
-    background-color: rgba(169, 29, 43, 1);
+    background-color: #7d1f27;
     text-align: center;
     animation: popin 0.1s forwards;
-    margin: 2% 10px 10px 17%;
-    padding: 1%;
+    margin: 10% 10px 11px 100%;
+    padding: 1% 8%;
     width: 400px;
+    font-size: 25px;
   }
 
   .login-box label::after {
@@ -117,7 +117,6 @@
     width: 25%;
     padding: 1.4% 8%;
     background-color: #7d1f27;
-    border: none;
     border: none;
     color: #ffffff;
     font-family: Arcade;
@@ -173,7 +172,7 @@
   .login-box label {
     text-align: left;
     font-size: 15px;
-    margin-left: -10%;
+    margin-left: 20%;
     margin-top: 50px;
   }
   .login-box input[type=submit] {
@@ -183,9 +182,10 @@
   }
   .login-box input[type=text], .login-box input[type=password]{
     /*margin: 2% 0;*/
-    margin-left: -40px;
+    margin-left: 20%;
     text-align: center;
     font-size: 13px;
+    margin-top: 0px;
 
   }
   .login-fail {
