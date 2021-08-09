@@ -57,15 +57,14 @@ class Login extends Component {
           </label>
           <input name='password' type='password' />
           <br />
-          <input type='submit' value='Login' />
-          <br />
           {this.state.loginFail ? (
             <h2 className='login-fail'>Login Failed</h2>
           ) : null}
+          <input type='submit' value='Login' />
         </form>
       );
     }
-    return <h1 className='accesses-granted'>{this.state.accessestext}</h1>;
+    return <h3 className='accesses-granted'>{this.state.accessestext}</h3>;
   };
 
   render() {
