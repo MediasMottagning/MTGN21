@@ -609,10 +609,8 @@ class Profile extends Component {
                       (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:
                       (profile.username === "fanny") ? <img alt="" id={profile.id} width="100%" src={fannyGhibli} className="prof_img"/>:
                         <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
-
               <div className="container">
                 <div className="text-change">
-
                     {(profile.type.name === "INPHO" && profile.name === "Fanny") ? (
               <React.Fragment>
                 <img
