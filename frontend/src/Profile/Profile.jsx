@@ -635,7 +635,10 @@ class Profile extends Component {
                 <br />
                 <br />
               </React.Fragment>
-            ) : (
+            ) :
+            (profile.type.name === "RSA") ? (
+                <div class="rsa.name">{profile.name}</div>
+            ) :(
                 <div class="profile-name">{profile.name}</div>
               )}
               </div>
@@ -680,14 +683,15 @@ class Profile extends Component {
                             className="conf_img"
 
 
-
                         /></a> :
+
                           <img
                             src={star}
                             width='100%'
                             alt=''
-                            className="conf_img"
+                            className="change-img"
                           />}
+                          
                     </div>
 
 

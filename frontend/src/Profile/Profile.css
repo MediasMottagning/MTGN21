@@ -108,6 +108,10 @@
   border-radius: 20%;
 }
 
+.rsa-name {
+  display: none;
+}
+
 .password-form {
   padding: 10px 0px;
   text-align: left;
@@ -196,7 +200,7 @@
   color: white;
   font-weight: bold;
   position: absolute;
-  top: 44%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -399,6 +403,10 @@
     }
 
     .conf_img {
+      display: none;
+    }
+
+    .change-img {
       width: 60%;
     }
 
@@ -410,6 +418,7 @@
     }
 
     .text-change {
+
       font-size: 12px;
     }
 
