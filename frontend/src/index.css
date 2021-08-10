@@ -22,8 +22,8 @@ p {
 }
 
 body {
-  background: #b4cfdd;
-  background-image: url(/assets/images/sky.png);
+  background: #686d9b;
+  background-image: url(final_webb_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -96,7 +96,7 @@ mark {
   }
 
   body {
-      background-image: url(/assets/images/skyMindre.png);
+      background-image: url(final_webb_bg_mobile.png);
     }
 }
 
