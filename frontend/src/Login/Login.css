@@ -128,6 +128,10 @@
   }
 
   @media screen and (max-width: 650px) { /* FÄRDIG */
+    .accesses-granted{
+      font-size: 28px;
+      margin-left: 16px;
+    }
     .login-box {
       margin-top: 30px;
       margin-left: -27px;
@@ -175,6 +179,9 @@
   }
 
   @media screen and (max-width: 550px) {
+    .accesses-granted{
+      margin-top: 100px;
+    }
     .login-box-form {
       margin-top: -10px;
       margin-left: 20px;
@@ -227,6 +234,9 @@
   }
 
   @media screen and (max-width: 450px) {
+    .accesses-granted{
+      margin-top: 85px;
+    }
     .login-box-form {
       margin-top: 65px;
       margin-left: 0px;
@@ -240,6 +250,11 @@
   }
 
   @media screen and (max-width: 420px) {
+    .accesses-granted{
+      font-size: 20px;
+      margin-top: 75px;
+      margin-left: 30px;
+    }
     .login-box-form {
       margin-top: 50px;
       margin-left: 5px;
@@ -257,6 +272,9 @@
   }
 
   @media screen and (max-width: 380px) {
+    .accesses-granted{
+      margin-top: 70px;
+    }
     .login-box-form {
       margin-top: -5px;
       margin-left: 5px;
@@ -300,6 +318,9 @@
   }
 
   @media screen and (max-width: 340px) {
+    .accesses-granted{
+      margin-top: 60px;
+    }
     .login-box-form {
       margin-top: -9px;
       margin-left: -9px;
