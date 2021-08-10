@@ -366,7 +366,7 @@ class Profile extends Component {
           <div className='profile-text-divider'>
             {profile.q1 || this.state.edit ? (
               <React.Fragment>
-                <h4>En ande ger dig 3 önskningar. Vad önskar du dig?</h4>
+                <h4>Favorit filmcitat/catchphrase?</h4>
                 {!this.state.edit ? (
                   <p>{profile.q1}</p>
                 ) : (
@@ -381,7 +381,7 @@ class Profile extends Component {
             ) : null}
             {profile.q2 || this.state.edit ? (
               <React.Fragment>
-                <h4>En animerad film som du aldrig tröttnar på?</h4>
+                <h4>Favoritscen i en film?</h4>
                 {!this.state.edit ? (
                   <p>{profile.q2}</p>
                 ) : (
@@ -396,7 +396,7 @@ class Profile extends Component {
             ) : null}
             {profile.q3 || this.state.edit ? (
               <React.Fragment>
-                <h4>Din animerade soulmate?</h4>
+                <h4>Vad hade du haft på dig på röda mattan?</h4>
                 {!this.state.edit ? (
                   <p>{profile.q3}</p>
                 ) : (
@@ -653,31 +653,31 @@ class Profile extends Component {
                       : (profile.username === "joppe") ?
                         <img src="http://anglingcouncilireland.ie/wp-content/uploads/sites/244/2016/04/Fun_Facts_Stamp-01-01-01.jpg" width='100%' style={{ marginTop: '50px' }} /> :
                         (profile.username === "machi") ? <a href="https://www.youtube.com/watch?v=CigSkK0ooAo" ><img
-                          src={media_logo4}
+                          src={star}
                           width='100%'
                           alt=''
                           className="conf_img"
                         /></a> :
                         (profile.username === "machi") ? <a href="https://www.youtube.com/watch?v=CigSkK0ooAo" ><img
-                          src={media_logo4}
+                          src={star}
                           width='100%'
                           alt=''
                           className="conf_img"
                         /></a> :
                         (profile.username === "jin") ? <a href="https://www.youtube.com/watch?v=mqDOQzfM5Kc" ><img
-                          src={media_logo4}
+                          src={star}
                           width='100%'
                           alt=''
                           className="conf_img"
                         /></a> :
                         (profile.username === "fanny" && profile.type.name === "INPHO") ? <a href="https://www.youtube.com/watch?v=ZkNMZlkrzaU" ><img
-                          src={media_logo4}
+                          src={star}
                           width='100%'
                           alt=''
                           className="conf_img"
                           /></a> :
                           (profile.username === "sacho" && profile.type.name === "INPHO") ? <a href="https://drive.google.com/file/d/12moL6FcZnzx8f9UxPA0a2MjSK3BbBtnn/view?usp=sharing" ><img
-                            src={media_logo4}
+                            src={star}
                             width='100%'
                             alt=''
                             className="conf_img"
