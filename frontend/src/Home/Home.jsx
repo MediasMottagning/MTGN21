@@ -11,6 +11,7 @@ import './../Media/Media.css';
 import ET from '../assets/ET_no_bg.png'
 import moln from "../assets/moln.png"
 import airplane from '../assets/aiplane.png'
+import letter from './letter.gif'
 
 class Home extends Component {
   //Check if the user is admin, if --> they can upload and delete??? should this be here?
@@ -53,9 +54,9 @@ class Home extends Component {
   getLink = () => {
     if (this.props.currentUser) {
       if (this.props.currentUser.type.name == "nØllan") {
-        return "https://forms.gle/A9pyyYtHvH5PuaoK7"
+        return "https://docs.google.com/forms/d/1EtJbbvck6xsIbW0Kb-Ya2b7iskgMRvZfUc5-fUBrcLw/viewform?edit_requested=true"
       } else {
-        return "https://forms.gle/2BAyNp8AVZHcRJk38"
+        return "https://docs.google.com/forms/d/e/1FAIpQLSca15EKfmWb4cSwCJQK1bnhs0d8J7uUte-T7H-2p-AghbMdeQ/viewform"
       }
     }
     return null;
@@ -103,7 +104,7 @@ class Home extends Component {
         newImg.push(this.state.newImg[i])
       }
     }
-    
+
 
     return (
       <div className="home-page">
@@ -111,12 +112,12 @@ class Home extends Component {
         <a className="up_house" href="https://forms.gle/xoxKokxqFAmezWVB9" target="_blank"><img width="80px" alt="Click me" src={ET} /></a>
         <img className="moln_1" width="200px" src={moln}/>
         <a className="airplane" href="https://www.instagram.com/inphogram/?hl=sv" target="_blank"><img width="150px" alt="Click me" src={airplane} /></a>
-        
+
         {(this.state.loading ? <Loader loading={true} /> :
           <div>
             <div className={(this.state.bubbolJump) ? "hjarta_lada big_lada" : "hjarta_lada small_lada"}>
-              <a className='footer-linck' href={this.getLink()} target="_blank" >
-                <img className={(this.state.bubbolJump) ? "bubbel bubbel-jump" : "bubbel"} src="https://cdn4.iconfinder.com/data/icons/iconsimple-communication/512/talk_bubble_heart-512.png" alt="Hjartat_lada" />
+              <a className='footer-linck' href={this.getLink()} >
+                <img className={(this.state.bubbolJump) ? "bubbel bubbel-jump" : "bubbel"} src={letter} alt="Hjartat_lada" />
                 <p  className="hjarta_text">Vad har du<br />på hjärtat?</p></a>
             </div>
 
