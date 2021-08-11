@@ -647,7 +647,7 @@ class Profile extends Component {
               </React.Fragment>
             ) :*/
             (profile.type.name === "RSA") ? (
-                <div class="rsa.name">{profile.name}</div>
+                <div class="rsa-name">{profile.name}</div>
             ) :
             (
                 <div class="profile-name">{profile.name}</div>
