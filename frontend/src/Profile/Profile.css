@@ -215,6 +215,11 @@
   transform: translate(-50%, -50%);
 }
 
+.kryss2{
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 .rsa-box h4 {
   text-align: left;
 }
@@ -389,6 +394,12 @@
     top: 52%;
     width: 100px;
     height: auto;
+  }
+
+  @media (min-width: 720px) {
+    .conf_kryss {
+      display: none;
+    }
   }
 
   @media (max-width: 720px) {
