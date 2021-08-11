@@ -16,6 +16,7 @@ import fannyNamn from '../assets/easter-eggs/fanny.gif'
 import lovisagif from '../assets/old/lovisa.gif'
 import shrekJessie from '../assets/easter-eggs/shrek.gif'
 import fannyGhibli from '../assets/easter-eggs/fannyGhibli.jpg'
+import kryss from '../assets/profiles/kryss.png'
 
 
 class Profile extends Component {
@@ -605,7 +606,7 @@ class Profile extends Component {
 
                   {(profile.username === "sacho") ? <a href={`https://www.youtube.com/watch?v=rTfa-9aCTYg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
                       (profile.username === "namn2goeshere") ? <a href="https://www.youtube.com/watch?v=zDUQTEsawhI" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
-                      (profile.username === "jessie") ? <a href={`https://youtu.be/HLQ1cK9Edhc?t=17`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
+                      (profile.username === "jessie") ? <a href={`/profiler/`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
                       (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:
                       (profile.username === "fanny") ? <img alt="" id={profile.id} width="100%" src={fannyGhibli} className="prof_img"/>:
                         <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
@@ -617,7 +618,8 @@ class Profile extends Component {
                   src={fannyNamn}
                   alt='Fanny'
                   height='40px'
-                  align='left'
+                  align='center'
+                  className='name_img'
                 />
                 <br />
                 <br />
@@ -641,6 +643,7 @@ class Profile extends Component {
             ) :(
                 <div class="profile-name">{profile.name}</div>
               )}
+
               </div>
 
                     {profile.type.name === "RSA"
@@ -656,44 +659,49 @@ class Profile extends Component {
                           src={star}
                           width='100%'
                           alt=''
-                          className="conf_img"
+                          className="change-img"
                         /></a> :
                         (profile.username === "machi") ? <a href="https://www.youtube.com/watch?v=CigSkK0ooAo" ><img
                           src={star}
                           width='100%'
                           alt=''
-                          className="conf_img"
+                          className="change-img"
                         /></a> :
                         (profile.username === "jin") ? <a href="https://www.youtube.com/watch?v=mqDOQzfM5Kc" ><img
                           src={star}
                           width='100%'
                           alt=''
-                          className="conf_img"
+                          className="change-img"
                         /></a> :
                         (profile.username === "fanny" && profile.type.name === "INPHO") ? <a href="https://www.youtube.com/watch?v=ZkNMZlkrzaU" ><img
                           src={star}
                           width='100%'
                           alt=''
-                          className="conf_img"
+                          className="change-img"
                           /></a> :
                           (profile.username === "sacho" && profile.type.name === "INPHO") ? <a href="https://drive.google.com/file/d/12moL6FcZnzx8f9UxPA0a2MjSK3BbBtnn/view?usp=sharing" ><img
                             src={star}
                             width='100%'
                             alt=''
-                            className="conf_img"
-
-
-                        /></a> :
-
-                          <img
-                            src={star}
-                            width='100%'
-                            alt=''
                             className="change-img"
-                          />}
-                          
-                    </div>
+                          /></a>:
 
+                        <img
+                        src={star}
+                        width='100%'
+                        alt=''
+                        className="change-img"
+                      />
+                    }   
+                        <div class="kryss">
+                          <a href={`/profiler/`} >
+                          <img
+                          src={kryss}
+                          width='100%'
+                          alt=''
+                          className="conf_img"
+                        /></a></div> 
+                    </div>
 
                     {/* <TopSecret />
                 <img className='profile-img' src={profile.profile_picture} alt=""/>*/}
