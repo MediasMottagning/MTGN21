@@ -105,14 +105,11 @@ class Home extends Component {
       }
     }
 
-<<<<<<< HEAD
     /*
     bilder på flytande moln:
       <img className="moln_2" width="170px" src={moln}/>
       <img className="moln_1" width="200px" src={moln}/>
     */
-=======
->>>>>>> main
 
     return (
       <div className="home-page">
