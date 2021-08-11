@@ -105,12 +105,18 @@ class Home extends Component {
       }
     }
 
+<<<<<<< HEAD
+    /*
+    bilder på flytande moln:
+      <img className="moln_2" width="170px" src={moln}/>
+      <img className="moln_1" width="200px" src={moln}/>
+    */
+=======
+>>>>>>> main
 
     return (
       <div className="home-page">
-        <img className="moln_2" width="170px" src={moln}/>
         <a className="up_house" href="https://forms.gle/xoxKokxqFAmezWVB9" target="_blank"><img width="80px" alt="Click me" src={ET} /></a>
-        <img className="moln_1" width="200px" src={moln}/>
         <a className="airplane" href="https://www.instagram.com/inphogram/?hl=sv" target="_blank"><img width="150px" alt="Click me" src={airplane} /></a>
 
         {(this.state.loading ? <Loader loading={true} /> :
@@ -120,8 +126,6 @@ class Home extends Component {
                 <img className={(this.state.bubbolJump) ? "bubbel bubbel-jump" : "bubbel"} src={letter} alt="Hjartat_lada" />
                 <p  className="hjarta_text">Vad har du<br />på hjärtat?</p></a>
             </div>
-
-
 
             <div>
 
