@@ -10,11 +10,13 @@ import RSAPopup from "./RSAPopup";
 //import skyMindre from "/assets/images/sky-mindre.png"
 import rsa_eagle_vit from '../assets/profiles/rsa_eagle_vit.png'
 import media_logo4 from '../assets/profiles/media_logo4.png'
+import star from '../assets/profiles/star4.png'
 import questionMark from '../assets/profiles/question.png'
 import fannyNamn from '../assets/easter-eggs/fanny.gif'
 import lovisagif from '../assets/old/lovisa.gif'
 import shrekJessie from '../assets/easter-eggs/shrek.gif'
 import fannyGhibli from '../assets/easter-eggs/fannyGhibli.jpg'
+import kryss from '../assets/profiles/X.png' 
 
 
 class Profile extends Component {
@@ -334,39 +336,11 @@ class Profile extends Component {
             c1='ok'
             c2=''
             btnRSA={this.fact}></RSAPopup> : null}
-          <h4>Namn</h4>
-          {(profile.type.name === "INPHO" && profile.name === "Fanny") ? (
-            <React.Fragment>
-              <img
-                src={fannyNamn}
-                alt='Fanny'
-                height='40px'
-                align='left'
-              />
-              <br />
-              <br />
-            </React.Fragment>
-          ) :
-          (profile.type.name === "VRAQUE" && profile.name === "Lovisa") ? (
-            <React.Fragment>
-              <img
-                src= {lovisagif}
-                alt='Lovisa'
-                height='40px'
-                align='left'
-              />
-              <br />
-              <br />
-            </React.Fragment>
-          ) : (
-              <p>{profile.name}</p>
-            )}
           <h4>Grupp</h4>
           <p>
             {profile.type.name !== "nØllan" ? (
               <React.Fragment>{profile.type.name}<br /> </React.Fragment>
             ) : null}
-
             {profile.n0llegroup ? (
               <React.Fragment>{profile.n0llegroup.name}</React.Fragment>
             ) : null}
@@ -393,7 +367,7 @@ class Profile extends Component {
           <div className='profile-text-divider'>
             {profile.q1 || this.state.edit ? (
               <React.Fragment>
-                <h4>En ande ger dig 3 önskningar. Vad önskar du dig?</h4>
+                <h4>Favorit filmcitat/catchphrase?</h4>
                 {!this.state.edit ? (
                   <p>{profile.q1}</p>
                 ) : (
@@ -408,7 +382,7 @@ class Profile extends Component {
             ) : null}
             {profile.q2 || this.state.edit ? (
               <React.Fragment>
-                <h4>En animerad film som du aldrig tröttnar på?</h4>
+                <h4>Favoritscen i en film?</h4>
                 {!this.state.edit ? (
                   <p>{profile.q2}</p>
                 ) : (
@@ -423,7 +397,7 @@ class Profile extends Component {
             ) : null}
             {profile.q3 || this.state.edit ? (
               <React.Fragment>
-                <h4>Din animerade soulmate?</h4>
+                <h4>Vad hade du haft på dig på röda mattan?</h4>
                 {!this.state.edit ? (
                   <p>{profile.q3}</p>
                 ) : (
@@ -624,11 +598,63 @@ class Profile extends Component {
         ) : (
             <div className="profile_site">
               <div className={(profile.type.name === "RSA" ? 'rsa-contaner profile-contaner-flyut-left' : 'profile-contaner profile-contaner-flyut-left')}>
-
                 <div className={(profile.type.name === "RSA" ? 'rsa-box' : 'profile-box')}>
 
                   {/* if/else sats för RSA-profilerna */}
                   <div className={(profile.type.name === "RSA" ? 'profile-top-img rsa-text-divider' : 'profile-top-img profile-text-divider')}>
+                  <div className="container">
+                  {/*(profile.username === "sacho") ? <a href={`https://www.youtube.com/watch?v=rTfa-9aCTYg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
+                      (profile.username === "namn2goeshere") ? <a href="https://www.youtube.com/watch?v=zDUQTEsawhI" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
+                      (profile.username === "jessie") ? <a href={`/profiler/`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
+                      (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:
+                      (profile.username === "fanny") ? <img alt="" id={profile.id} width="100%" src={fannyGhibli} className="prof_img"/>:*/
+                        <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
+                        <div class="kryss">
+                          <a href={`/profiler/`} >
+                          <img
+                          src={kryss}
+                          width='100%'
+                          alt=''
+                          className="conf_kryss"
+                        /></a></div> 
+                        </div>
+              <div className="container">
+                <div className="profile-name">
+                    {/*(profile.type.name === "INPHO" && profile.name === "Fanny") ? (
+              <React.Fragment>
+                <img
+                  src={fannyNamn}
+                  alt='Fanny'
+                  height='40px'
+                  align='center'
+                  className='name_img'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) :
+            (profile.type.name === "VRAQUE" && profile.name === "Lovisa") ? (
+
+              <React.Fragment>
+                <img
+                  src= {lovisagif}
+                  alt='Lovisa'
+                  height='40px'
+                  align='left'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) :*/
+            (profile.type.name === "RSA") ? (
+                <div class="rsa-name">{profile.name}</div>
+            ) :
+            (
+                <div class="profile-name">{profile.name}</div>
+              )}
+
+              </div>
+
                     {profile.type.name === "RSA"
                       ? <img
                         src={rsa_eagle_vit}
@@ -636,56 +662,56 @@ class Profile extends Component {
                         alt=''
                         className="conf_img rsa_logga"
                       />
-                      : (profile.username === "joppe") ?
+                      : /*(profile.username === "joppe") ?
                         <img src="http://anglingcouncilireland.ie/wp-content/uploads/sites/244/2016/04/Fun_Facts_Stamp-01-01-01.jpg" width='100%' style={{ marginTop: '50px' }} /> :
                         (profile.username === "machi") ? <a href="https://www.youtube.com/watch?v=CigSkK0ooAo" ><img
-                          src={media_logo4}
+                          src={star}
                           width='100%'
                           alt=''
-                          className="conf_img"
+                          className="change-img"
                         /></a> :
                         (profile.username === "machi") ? <a href="https://www.youtube.com/watch?v=CigSkK0ooAo" ><img
-                          src={media_logo4}
+                          src={star}
                           width='100%'
                           alt=''
-                          className="conf_img"
+                          className="change-img"
                         /></a> :
                         (profile.username === "jin") ? <a href="https://www.youtube.com/watch?v=mqDOQzfM5Kc" ><img
-                          src={media_logo4}
+                          src={star}
                           width='100%'
                           alt=''
-                          className="conf_img"
+                          className="change-img"
                         /></a> :
                         (profile.username === "fanny" && profile.type.name === "INPHO") ? <a href="https://www.youtube.com/watch?v=ZkNMZlkrzaU" ><img
-                          src={media_logo4}
+                          src={star}
+                          width='100%'
+                          alt=''
+                          className="change-img"
+                          /></a> :
+                          (profile.username === "sacho" && profile.type.name === "INPHO") ? <a href="https://drive.google.com/file/d/12moL6FcZnzx8f9UxPA0a2MjSK3BbBtnn/view?usp=sharing" ><img
+                            src={star}
+                            width='100%'
+                            alt=''
+                            className="change-img"
+                          /></a>:*/
+
+                        <img
+                        src={star}
+                        width='100%'
+                        alt=''
+                        className="change-img"
+                      />
+                    }   
+                        <div class="kryss">
+                          <a href={`/profiler/`} >
+                          <img
+                          src={kryss}
                           width='100%'
                           alt=''
                           className="conf_img"
-                          /></a> :
-                          (profile.username === "sacho" && profile.type.name === "INPHO") ? <a href="https://drive.google.com/file/d/12moL6FcZnzx8f9UxPA0a2MjSK3BbBtnn/view?usp=sharing" ><img
-                            src={media_logo4}
-                            width='100%'
-                            alt=''
-                            className="conf_img"
+                        /></a></div> 
+                    </div>
 
-
-
-                        /></a> :
-                          <img
-                            src={media_logo4}
-                            width='100%'
-                            alt=''
-                            className="conf_img"
-                          />}
-
-
-
-                    {(profile.username === "sacho") ? <a href={`https://www.youtube.com/watch?v=rTfa-9aCTYg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
-                      (profile.username === "namn2goeshere") ? <a href="https://www.youtube.com/watch?v=zDUQTEsawhI" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
-                      (profile.username === "jessie") ? <a href={`https://youtu.be/HLQ1cK9Edhc?t=17`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
-                      (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:
-                      (profile.username === "fanny") ? <img alt="" id={profile.id} width="100%" src={fannyGhibli} className="prof_img"/>:
-                        <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
                     {/* <TopSecret />
                 <img className='profile-img' src={profile.profile_picture} alt=""/>*/}
                   </div>

@@ -71,7 +71,7 @@ class ProfileButton extends Component {
                 />
               </g>
               <g transform='matrix(1,0,0,1,-979.033,-34.836)'>
-                <text x='1480px' y='845px' dominantBaseline="middle" textAnchor="middle" style={{fontSize: "70px"}}>
+                <text x='1480px' y='845px' dominantBaseline="middle" textAnchor="middle" style={{fontSize: "54px"}}>
                   {this.props.name}
                 </text>
               </g>
