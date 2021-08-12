@@ -113,7 +113,7 @@ class Home extends Component {
 
     return (
       <div className="home-page">
-        <a className="up_house" href="https://forms.gle/xoxKokxqFAmezWVB9" target="_blank"><img width="80px" alt="Click me" src={ET} /></a>
+        <a className="up_house" href="https://forms.gle/kprFcahWmtQYpFei7" target="_blank"><img width="80px" alt="Click me" src={ET} /></a>
         <a className="airplane" href="https://www.instagram.com/inphogram/?hl=sv" target="_blank"><img width="150px" alt="Click me" src={airplane} /></a>
 
         {(this.state.loading ? <Loader loading={true} /> :
