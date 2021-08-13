@@ -302,28 +302,28 @@ class Media extends Component {
               ) : null}
             </div>
 
- 
+
 
           </div>
           {/*media*/}
           <div className='media-grid'>
-            {medias.map((media, i) => {  
+            {medias.map((media, i) => {
               if (this.showImg(media)) {
                 this.createImages(media);
                 if (i === 0) {
                   this.index++;
                   return (
                     <React.Fragment key={i}>
-                      <h2 className='media-divider'>{`v.${media.week}`}</h2>
+                      <h2 className='media-divider'>{media.event.name}</h2>
                       {this.createImageTag(this.index-1, media)}
                     </React.Fragment>
                   );
                 }
-                if (medias[i - 1].week !== media.week) {
+                if (medias[i - 1].event.name !== media.event.name) {
                   this.index++;
                   return (
                     <React.Fragment key={i}>
-                      <h2 className='media-divider'>{`v.${media.week}`}</h2>
+                      <h2 className='media-divider'>{media.event.name}</h2>
                       {this.createImageTag(this.index-1, media)}
                     </React.Fragment>
                   );
