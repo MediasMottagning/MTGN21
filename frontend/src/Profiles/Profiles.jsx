@@ -15,41 +15,41 @@ class Profiles extends Component {
       profiles.sort((a, b) => this.sortUsers(a,b))
 
       profiles.sort((a, b) => this.sortN0llan(a,b))
-      
+
       var phosarGroup = "ÖPH"
-      var electus = "Sunny";
+      var electus = "Olli";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
-      var electus = "Kajsa";
+      var electus = "Amalia";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
-      var electus = "Gabbi";
+      var electus = "Kraft";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
 
       var phosarGroup = "KPH"
-      var electus = "Erik";
+      var electus = "Gustav";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
-      var electus = "Leon";
+      var electus = "Lotta";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
 
       var phosarGroup = "INPHO"
-      var electus = "Julia";
+      var electus = "Jessie";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
-      var electus = "Mickan";
+      var electus = "Fanny";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
 
       var phosarGroup = "ARR"
-      var electus = "Simon";
+      var electus = "Manda";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
-      var electus = "Edvin";
+      var electus = "Nilsson Järnvägsgrillson";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
 
       var phosarGroup = "VRAQUE"
-      var electus = "Skipper";
+      var electus = "Hilda";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
-      var electus = "Extremil";
+      var electus = "Moa";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
 
       var phosarGroup = "RSA"
-      var electus = "Bob";
+      var electus = "Mallory";
       profiles.sort((x, y) => this.electusFirst(x,y,electus, phosarGroup))
 
 
@@ -85,9 +85,9 @@ class Profiles extends Component {
   }
 
   sortN0llan = (a, b) => {
-    const gr0up = ["Dora's Explorahs", 'BumbibjØrnarna', 'Cartoon Networking', 
-                  'AristØcats', 'Björnligan', 'Eldnationen']
-    
+    const gr0up = ["Frack & Furious", 'Fight Club', 'Stunt Crew',
+                  'Wild Cats', 'Mean Girls', 'Top Gang']
+
 
     if (a.type.name === 'nØllan' && b.type.name === 'nØllan')
     {
@@ -98,9 +98,9 @@ class Profiles extends Component {
     return 0;
   }
 
-  
 
-  electusFirst = (x, y, electus, phosarGroup) =>{ 
+
+  electusFirst = (x, y, electus, phosarGroup) =>{
       if (x.type.name == phosarGroup && y.type.name == phosarGroup){
         if (x.name == electus){
           return -1
@@ -125,12 +125,12 @@ class Profiles extends Component {
     if (profiles.length === 1) {
       return null
     }
-    
+
     //console.log(profiles)
     return (
       <div className='profiles-page'>
         {(this.state.loading ? <Loader loading={true} /> : <div>
-          
+
         <div className='profiles-contaner'>
           {profiles.map((profile, i) => {
             if (!profile.hidden) {
@@ -139,7 +139,7 @@ class Profiles extends Component {
                   {(profile.type.name ==='nØllan') ? <h2 className={this.getDividerClass(profile)}>{`${profile.n0llegroup.name}`}</h2> : <h2 className={this.getDividerClass(profile)}>{`${profile.type.name}`}</h2>}
                   <ProfileButton index={i} name={profile.name} userName={profile.username} userImg={profile.profile_picture} clickHandeler={this.clickHandeler} />
                 </React.Fragment>)
-              } 
+              }
               //console.log(profiles[i-1].type.name, profile.type.name)
               if (profiles[i-1].type.name !== profile.type.name || (profile.type.name ==='nØllan' && profiles[i-1].n0llegroup.name !== profile.n0llegroup.name)) {
                 return (<React.Fragment key={i}>
@@ -159,7 +159,7 @@ class Profiles extends Component {
           })}
         </div>
         </div>)}
-        
+
       </div>
     );
   }
