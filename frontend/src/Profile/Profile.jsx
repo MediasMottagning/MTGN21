@@ -367,7 +367,7 @@ class Profile extends Component {
           <div className='profile-text-divider'>
             {profile.q1 || this.state.edit ? (
               <React.Fragment>
-                <h4>Favorit filmcitat/catchphrase?</h4>
+                <h4>Vilket är ditt favoritfilmcitat?</h4>
                 {!this.state.edit ? (
                   <p>{profile.q1}</p>
                 ) : (
@@ -382,7 +382,7 @@ class Profile extends Component {
             ) : null}
             {profile.q2 || this.state.edit ? (
               <React.Fragment>
-                <h4>Favoritscen i en film?</h4>
+                <h4>Vilken är din favoritfilmscen?</h4>
                 {!this.state.edit ? (
                   <p>{profile.q2}</p>
                 ) : (
