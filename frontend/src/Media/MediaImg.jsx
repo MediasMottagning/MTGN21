@@ -157,14 +157,10 @@ class MediaImg extends Component {
                     transform='matrix(0.999395,0,0,0.999395,0,0)'
                   />
                 </g>
+                
                 <g transform='matrix(1.06345,0,0,1.06345,-80.5655,-316.91)'>
-                  <text
-                    x='1475px'
-                    y='740px'
-                   dominantBaseline="middle" textAnchor="middle"
-                    style={{ fontWeight: "700", fontSize: "45px" }}>
-                    {this.props.media.event.name}
-                  </text>
+                  
+                  
                 </g>
               </g>
             </g>

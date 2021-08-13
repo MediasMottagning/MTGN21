@@ -38,16 +38,19 @@
     background-image: url('http://www.photos-public-domain.com/wp-content/uploads/2012/05/ivory-off-white-paper-texture.jpg');
     background-size: fill;
     background: #0000007e;
+    padding: 0px 0px 2px;
 
     border-radius: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 0.1px;
     transition: all 0.2s ease;
+    
     /*position: fixed;
     width: 100%;*/
 }
 
 .checkbox-contaner h1{
     border-bottom: white 1px;
+    padding: 12px 0px 5px;
 
 }
 

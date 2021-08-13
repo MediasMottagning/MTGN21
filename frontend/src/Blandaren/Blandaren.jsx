@@ -64,6 +64,7 @@ class Blandaren extends Component {
     }
     return (
       <div className='blandar-page'>
+        <div className="news-content">
         {this.state.loading ? (
           <Loader loading={true} />
         ) : (
@@ -106,6 +107,7 @@ class Blandaren extends Component {
             </div>
           </div>
         )}
+        </div>
       </div>
     );
   }

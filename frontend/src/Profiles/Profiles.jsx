@@ -85,8 +85,8 @@ class Profiles extends Component {
   }
 
   sortN0llan = (a, b) => {
-    const gr0up = ["Frack & Furious", 'Fight Club', 'Stunt Crew',
-                  'Wild Cats', 'Mean Girls', 'Top Gang']
+    const gr0up = ["Fraque & Furious", 'Fight Club', 'Stuntcrew',
+                  'Wildcats', 'Mean Girls', 'Top Gang']
 
 
     if (a.type.name === 'nØllan' && b.type.name === 'nØllan')

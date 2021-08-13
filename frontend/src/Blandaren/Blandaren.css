@@ -9,7 +9,7 @@
 }
 
 .blandar-page h2{
-  color: black
+  color: rgb(255, 255, 255)
 }
 
 .image-hover {
@@ -24,7 +24,7 @@
 
   .title {
       padding: 12px;
-      color: black;
+      color: rgb(255, 255, 255);
   }
 
   .blandaren_grid {
