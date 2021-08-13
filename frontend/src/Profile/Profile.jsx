@@ -15,7 +15,7 @@ import questionMark from '../assets/profiles/question.png'
 import fannyNamn from '../assets/easter-eggs/fanny.gif'
 import lovisagif from '../assets/old/lovisa.gif'
 import shrekJessie from '../assets/easter-eggs/shrek.gif'
-import fannyGhibli from '../assets/easter-eggs/fannyGhibli.jpg'
+import jackiechan from '../assets/easter-eggs/jackiechan.jpeg'
 import kryss from '../assets/profiles/X.png' 
 
 
@@ -329,7 +329,6 @@ class Profile extends Component {
     return (
       <React.Fragment>
         <div className='profile-text-divider'>
-
           {this.state.factPopup ? <RSAPopup
             user={null}
             text={this.state.factText}
@@ -347,7 +346,7 @@ class Profile extends Component {
           </p>
         </div>
         <form onSubmit={this.userUpdate}>
-          <div className='profile-text-divider'>
+          <div className='profile-text-space'>
             {profile.description || this.state.edit ? (
               <React.Fragment>
                 <h4>Om mig</h4>
@@ -364,7 +363,7 @@ class Profile extends Component {
               </React.Fragment>
             ) : null}
           </div>
-          <div className='profile-text-divider'>
+          <div className='profile-text-space'>
             {profile.q1 || this.state.edit ? (
               <React.Fragment>
                 <h4>Favorit filmcitat/catchphrase?</h4>
@@ -601,16 +600,16 @@ class Profile extends Component {
                 <div className={(profile.type.name === "RSA" ? 'rsa-box' : 'profile-box')}>
 
                   {/* if/else sats för RSA-profilerna */}
-                  <div className={(profile.type.name === "RSA" ? 'profile-top-img rsa-text-divider' : 'profile-top-img profile-text-divider')}>
+                  <div className={(profile.type.name === "RSA" ? 'profile-top-img rsa-text-divider' : 'profile-top-img')}>
                   <div className="container">
                   {/*(profile.username === "sacho") ? <a href={`https://www.youtube.com/watch?v=rTfa-9aCTYg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
                       (profile.username === "namn2goeshere") ? <a href="https://www.youtube.com/watch?v=zDUQTEsawhI" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
                       (profile.username === "jessie") ? <a href={`/profiler/`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
-                      (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:
-                      (profile.username === "fanny") ? <img alt="" id={profile.id} width="100%" src={fannyGhibli} className="prof_img"/>:*/
+                      (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:*/
+                      (profile.username === "jackie") ? <img alt="" id={profile.id} width="100%" src={jackiechan} className="prof_img"/>:
                         <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
                         <div class="kryss">
-                          <a href={`/profiler/`} >
+                          <a href={`/profiler/`}>
                           <img
                           src={kryss}
                           width='100%'

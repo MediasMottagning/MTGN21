@@ -33,6 +33,10 @@
   border-bottom: #000 1px solid;
 }
 
+.profile-text-space {
+  padding: 2%;
+}
+
 .rsa-text-divider {
   padding: 2%;
   border-bottom: white 1px solid;
@@ -185,10 +189,11 @@
 
 .profile-box h4 {
   text-align: left;
-  size: 10px;
+  font-size: 20px;
 }
 .profile-box p{
   text-align: left;
+  font-size: 20px;
 }
 
 .container {
@@ -201,6 +206,7 @@
   font-weight: bold;
   position: absolute;
   left: 50%;
+  white-space: nowrap;
   transform: translate(-50%, -50%);
 }
 
@@ -374,8 +380,8 @@
   }
 
   .kryss{
-    top: 15px;
-    right: -40px;
+    top: 16px;
+    right: -26px;
     width: 30px;
     height: 30px;
   }
@@ -387,7 +393,7 @@
 
   .profile-name {
     font-size: 18px;
-    top: 46%;
+    top: 44%;
   }
 
   .name_img {
@@ -470,4 +476,18 @@
       margin-top: 16%;
     }
 
+  }
+
+  @media (max-width: 900px) {
+    .profile-name {
+      top: 44%;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .profile-name {
+      top: 44%;
+      font-size: 8px;
+    }
   }
