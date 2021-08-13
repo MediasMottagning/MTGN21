@@ -16,7 +16,8 @@ class Footer extends Component {
   {url:"https://www.redbull.com/se-en/", img:require('../assets/companies/RedBull.png')},
   {url:"https://studybuddy.se/", img:require('../assets/companies/Studybuddy.png')},
   {url:"https://www.ericsson.com/en", img:require('../assets/companies//ericsson.png')},
-  {url:"https://www.svt.se/", img:require('../assets/companies//SVT_Logotyp_RGB.png')}]
+  {url:"https://www.svt.se/", img:require('../assets/companies//SVT_Logotyp_RGB.png')},
+  {url:"https://weknowit.se/", img:require('../assets/companies//weknowit_logo_blue.svg')}]
 
   render() {
     return (
