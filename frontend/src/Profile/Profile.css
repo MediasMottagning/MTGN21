@@ -330,8 +330,8 @@
 	width: 3vmin;
 	height: 3vmin;
 	background: transparent;
-	border-top: 1vmin solid grey;
-	border-right: 1vmin solid grey;
+	border-top: 1vmin solid rgb(255, 255, 255);
+	border-right: 1vmin solid rgb(255, 255, 255);
 	box-shadow: 0 0 0 lightgray;
   transition: all 200ms ease;
 }
