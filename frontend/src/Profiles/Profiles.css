@@ -17,7 +17,8 @@
     background: url('https://media1.giphy.com/media/Y5wlazC8lSVuU/giphy.gif');
     background-size: contain;
     border-color: black;
-
+    font-family: Stardos Stencil;
+    src: url(StardosStencil-Bold.ttf);
 }
 
 .profiles-button {
