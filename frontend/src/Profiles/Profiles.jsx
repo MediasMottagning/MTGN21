@@ -130,6 +130,9 @@ class Profiles extends Component {
     return (
       <div className='profiles-page'>
         {(this.state.loading ? <Loader loading={true} /> : <div>
+          
+        <div className='person-content'>
+        <h1 className="view_header">Personer</h1> </div>
 
         <div className='profiles-contaner'>
           {profiles.map((profile, i) => {

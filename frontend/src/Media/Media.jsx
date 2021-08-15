@@ -286,7 +286,7 @@ class Media extends Component {
         {(this.state.loading ? <Loader loading={true} /> : <div>
           {/*checkbox*/}
           <div className='checkbox-contaner'>
-            <h1 className='view_header'>Bilder och videor</h1>
+            <h1 className='view_header'>Galleri</h1>
             <div
               className={
                 !this.state.isOpen
