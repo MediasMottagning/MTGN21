@@ -13,7 +13,7 @@ import media_logo4 from '../assets/profiles/media_logo4.png'
 import star from '../assets/profiles/star4.png'
 import questionMark from '../assets/profiles/question.png'
 import fannyNamn from '../assets/easter-eggs/fanny.gif'
-import lovisagif from '../assets/old/lovisa.gif'
+import omnijin from '../assets/easter-eggs/omniman.gif'
 import shrekJessie from '../assets/easter-eggs/shrek.gif'
 import jackiechan from '../assets/easter-eggs/jackiechan.jpeg'
 import kryss from '../assets/profiles/X.png' 
@@ -604,8 +604,8 @@ class Profile extends Component {
                   <div className="container">
                   {/*(profile.username === "sacho") ? <a href={`https://www.youtube.com/watch?v=rTfa-9aCTYg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
                       (profile.username === "namn2goeshere") ? <a href="https://www.youtube.com/watch?v=zDUQTEsawhI" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
-                      (profile.username === "jessie") ? <a href={`/profiler/`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
-                      (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:*/
+                      (profile.username === "jessie") ? <a href={`/profiler/`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:*/
+                      (profile.username === "jin") ? <img alt="" id={profile.id} width="100%" src={omnijin} className="prof_img" />:
                       (profile.username === "jackie") ? <img alt="" id={profile.id} width="100%" src={jackiechan} className="prof_img"/>:
                         <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
                         <div class="kryss">
