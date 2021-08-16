@@ -607,6 +607,8 @@ class Profile extends Component {
                       (profile.username === "jessie") ? <a href={`/profiler/`} ><img alt="" id={profile.id} width="100%" src={shrekJessie} className="prof_img" /></a>:
                       (profile.username === "jin") ? <a href={`https://www.youtube.com/watch?v=eaEMSKzqGAg`} ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a>:*/
                       (profile.username === "jackie") ? <img alt="" id={profile.id} width="100%" src={jackiechan} className="prof_img"/>:
+                      (profile.username === "max jr.") ? <a href="https://www.youtube.com/watch?v=YUhMRnEABfc" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
+                      (profile.username === "soff") ? <a href="https://www.youtube.com/watch?v=l0Nc0-dFwAI" ><img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" /></a> :
                         <img alt="" id={profile.id} width="100%" src={profile.profile_picture} className="prof_img" />}
                         <div class="kryss">
                           <a href={`/profiler/`}>
