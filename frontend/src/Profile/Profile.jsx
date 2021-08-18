@@ -9,12 +9,15 @@ import RSAPopup from "./RSAPopup";
 
 //import skyMindre from "/assets/images/sky-mindre.png"
 import rsa_eagle_vit from '../assets/profiles/rsa_eagle_vit.png'
-import media_logo4 from '../assets/profiles/media_logo4.png'
+import snaran from '../assets/easter-eggs/Snaran.png'
+import jw from '../assets/easter-eggs/JW.png'
+import darth from '../assets/easter-eggs/Darth.png'
+import soff from '../assets/easter-eggs/soff.png'
+import tuan from '../assets/easter-eggs/Tuan.png'
 import star from '../assets/profiles/star4.png'
 import questionMark from '../assets/profiles/question.png'
 import fannyNamn from '../assets/easter-eggs/fanny.gif'
 import omnijin from '../assets/easter-eggs/omniman.gif'
-import shrekJessie from '../assets/easter-eggs/shrek.gif'
 import jackiechan from '../assets/easter-eggs/jackiechan.jpeg'
 import kryss from '../assets/profiles/X.png' 
 
@@ -624,7 +627,19 @@ class Profile extends Component {
                 <img
                   src={fannyNamn}
                   alt='Fanny'
-                  height='40px'
+                  align='center'
+                  className='name_img'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) :*/
+
+            (profile.type.name === "INPHO" && profile.name === "Snaran") ? (
+              <React.Fragment>
+                <img
+                  src= {snaran}
+                  alt='snaran'
                   align='center'
                   className='name_img'
                 />
@@ -632,19 +647,59 @@ class Profile extends Component {
                 <br />
               </React.Fragment>
             ) :
-            (profile.type.name === "VRAQUE" && profile.name === "Lovisa") ? (
 
+            (profile.type.name === "INPHO" && profile.name === "JW") ? (
               <React.Fragment>
                 <img
-                  src= {lovisagif}
-                  alt='Lovisa'
-                  height='40px'
-                  align='left'
+                  src= {jw}
+                  alt='jw'
+                  align='center'
+                  className='name_img'
                 />
                 <br />
                 <br />
               </React.Fragment>
-            ) :*/
+            ) :
+
+            (profile.type.name === "INPHO" && profile.name === "Darth") ? (
+              <React.Fragment>
+                <img
+                  src= {darth}
+                  alt='darth'
+                  align='center'
+                  className='name_img'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) :
+
+            (profile.type.name === "INPHO" && profile.name === "Tuan") ? (
+              <React.Fragment>
+                <img
+                  src= {tuan}
+                  alt='tuan'
+                  align='center'
+                  className='name_img'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) :
+
+            (profile.type.name === "INPHO" && profile.name === "Soff") ? (
+              <React.Fragment>
+                <img
+                  src= {soff}
+                  alt='soff'
+                  align='center'
+                  className='name_img'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) :
+
             (profile.type.name === "RSA") ? (
                 <div class="rsa-name">{profile.name}</div>
             ) :
