@@ -14,6 +14,7 @@ import jw from '../assets/easter-eggs/JW.png'
 import darth from '../assets/easter-eggs/Darth.png'
 import soff from '../assets/easter-eggs/soff.png'
 import tuan from '../assets/easter-eggs/Tuan.png'
+import jackie from '../assets/easter-eggs/jackie.png'
 import star from '../assets/profiles/star4.png'
 import questionMark from '../assets/profiles/question.png'
 import fannyNamn from '../assets/easter-eggs/fanny.gif'
@@ -692,6 +693,19 @@ class Profile extends Component {
                 <img
                   src= {soff}
                   alt='soff'
+                  align='center'
+                  className='name_img'
+                />
+                <br />
+                <br />
+              </React.Fragment>
+            ) :
+
+            (profile.type.name === "INPHO" && profile.name === "Jackie") ? (
+              <React.Fragment>
+                <img
+                  src= {jackie}
+                  alt='jackie'
                   align='center'
                   className='name_img'
                 />
